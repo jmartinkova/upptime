@@ -17,7 +17,7 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: demo.upptime.js.org
   baseUrl: /upptime
-  logoUrl: assets/dsw-logo-full-color-transparent.png
+  logo: assets/dsw-logo-full-color-transparent.png
   name: DSW Status
   introTitle: "**DSW** Services Monitoring"
   # introMessage: 
@@ -26,7 +26,7 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-  theme: ocean
+  theme: assets/dsw-theme.css
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
