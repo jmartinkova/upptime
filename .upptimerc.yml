@@ -5,11 +5,9 @@ repo: upptime # The name of this repository
 sites:
   - name: DSW
     url: https://ds-wizard.org
-    icon: assets/dsw-logo-icon-color-transparent.png
     # assignees - must be a team member
   - name: Localize
     url: https://localize.ds-wizard.org/
-    icon: assets/weblate_icon.png
     # assignees - must be a team member
 
 status-website:
@@ -17,16 +15,16 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: demo.upptime.js.org
   baseUrl: /upptime
-  logo: assets/dsw-logo-full-color-transparent.png
+  logoUrl: assets/dsw-logo-full-color-transparent.png
   name: DSW Status
   introTitle: "**DSW** Services Monitoring"
   # introMessage: 
+  theme: assets/dsw-theme.css
   navbar:
     - title: Status
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-  theme: assets/dsw-theme.css
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
