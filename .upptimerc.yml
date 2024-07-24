@@ -9,6 +9,7 @@ sites:
   - name: Localize
     url: https://localize.ds-wizard.org/
     # assignees - must be a team member
+  # Test for visualisations and issue creation
   - name: Test for non-existing page
     url: https://this_page_does_not_exist.com
 
