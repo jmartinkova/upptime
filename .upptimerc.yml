@@ -15,11 +15,12 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   # cname: demo.upptime.js.org
   baseUrl: /upptime
-  logoUrl: https://jmartinkova.github.io/upptime/dsw-logo-full-color-transparent.png
+  logoUrl: https://jmartinkova.github.io/upptime/dsw-logo-icon-color-transparent.png
   name: DSW Status
   introTitle: "**DSW** Services Monitoring"
   # introMessage: 
-  theme: assets/dsw-theme.css
+  themeUrl: https://jmartinkova.github.io/upptime/dsw-theme.css
+  #flavicon: https://jmartinkova.github.io/upptime/dsw-logo-icon-color-transparent.png
   navbar:
     - title: Status
       href: /
