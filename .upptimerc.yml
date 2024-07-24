@@ -11,6 +11,8 @@ sites:
     url: https://localize.ds-wizard.org/
     # icon
     # assignees
+  - name: Google
+    url: https://google.com
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
