@@ -9,6 +9,8 @@ sites:
   - name: Localize
     url: https://localize.ds-wizard.org/
     # assignees - must be a team member
+  - name: Test for non-existing page
+    url: https://this_page_does_not_exist.com
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
@@ -18,7 +20,7 @@ status-website:
   logoUrl: https://jmartinkova.github.io/upptime/dsw-logo-icon-color-transparent.png
   name: DSW Status
   introTitle: "**DSW** Services Monitoring"
-  # introMessage: 
+  introMessage: "Welcome to the Data Stewardship Wizard Monitoring Dashboard, where you can view the real-time status of our services."
   themeUrl: https://jmartinkova.github.io/upptime/dsw-theme.css
   #flavicon: https://jmartinkova.github.io/upptime/dsw-logo-icon-color-transparent.png
   navbar:
