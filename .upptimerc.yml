@@ -29,15 +29,14 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
   workflowSchedule:
-    graphs: "*/15 * * * *"
-    responseTime: "*/15 * * * *"
-    staticSite: "*/15 * * * *"
-    summary: "*/15 * * * *"
-    updateTemplate: "*/15 * * * *"
-    updates: "*/15 * * * *"
-    uptime: "*/15 * * * *"
+    graphs: "*/10 * * * *" #regenerate graphs - every 10 minutes
+    responseTime: "*/10 * * * *" #checks the response time - every 10 minutes
+    staticSite: "0 0 * * *" #generation of the static part of the page - each midnight
+    summary: "*/15 * * * *" #summary generation
+    updateTemplate: "0 1 * * 1" #update the Upptime template - once a week, monday 1AM
+    updates: "*/15 * * * *" #
+    uptime: "*/10 * * * *" #checks if the webside is up - every 10 minutes
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
