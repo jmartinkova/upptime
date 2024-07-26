@@ -32,7 +32,7 @@ status-website:
   workflowSchedule:
     graphs: "*/10 * * * *" #regenerate graphs - every 10 minutes
     responseTime: "*/10 * * * *" #checks the response time - every 10 minutes
-    staticSite: "0 0 * * *" #generation of the static part of the page - each midnight
+    staticSite: "*/15 * * * *" #generation of the static part of the page - each midnight
     summary: "*/15 * * * *" #summary generation
     updateTemplate: "*/15 * * * *" #update the Upptime template - once a week, monday 1AM
     updates: "*/15 * * * *" #
