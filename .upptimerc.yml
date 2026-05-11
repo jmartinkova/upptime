@@ -1,42 +1,55 @@
 # Change these first
-owner: jmartinkova # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: jmartinkova
+repo: upptime
 
 sites:
   - name: "DSW Cloud for ELIXIR (homepage)"
     url: https://dsw.elixir-europe.org
+
   - name: "DSW Researchers instance"
     url: https://researchers.dsw.elixir-europe.org
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  # cname: demo.upptime.js.org
-  baseUrl: /status
-  logoUrl: https://dsw-elixir.github.io/status/dsw-icon.svg
+  baseUrl: /upptime
+
+  logoUrl: https://jmartinkova.github.io/upptime/dsw-icon.svg
+
   name: "DSW Cloud for ELIXIR | Status"
+
   introTitle: "Status page for [**dsw.elixir-europe.org**](https://dsw.elixir-europe.org) services."
-  introMessage: "This is status page monitors the availability of the DSW Cloud for ELIXIR services. It also contains important information in case of outages, scheduled maintenance, and other incidents."
-  themeUrl: https://dsw-elixir.github.io/status/custom-theme.css
+
+  introMessage: "This status page monitors the availability of the DSW Cloud for ELIXIR services."
+
+  themeUrl: https://jmartinkova.github.io/upptime/custom-theme.css
+
   navbar:
     - title: Status
-      href: /status
+      href: /upptime
+
     - title: Homepage
       href: https://dsw.elixir-europe.org
+
   js: |
-    window.addEventListener("load", function () {
-      if (window.location.pathname === "/status/" ||
-          window.location.pathname === "/status") {
+    function hidePastIncidents() {
+      const path = window.location.pathname.replace(/\/$/, "");
 
-        document.querySelectorAll("section").forEach(function (section) {
-          const heading = section.querySelector("h2");
-
-          if (heading && heading.textContent.trim() === "Past Incidents") {
-            section.style.display = "none";
-          }
-        });
+      if (path !== "/upptime") {
+        return;
       }
-    });
+
+      document.querySelectorAll("section").forEach(function (section) {
+        const heading = section.querySelector("h2");
+
+        if (heading && heading.textContent.trim() === "Past Incidents") {
+          section.style.display = "none";
+        }
+      });
+    }
+
+    window.addEventListener("load", hidePastIncidents);
+
+    setTimeout(hidePastIncidents, 500);
+    setTimeout(hidePastIncidents, 1500);
 
 workflowSchedule:
   graphs: "0 0 * * *"
