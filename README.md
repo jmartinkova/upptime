@@ -21,7 +21,7 @@ With [Upptime](https://upptime.js.org), you can get your own unlimited and free 
 
 <!--end: status pages-->
 
-[**Visit our status website →**](https://dsw-nrp.github.io/status)
+[**Visit our status website →**](https://jmartinkova.github.io/upptime/)
 
 ## 📄 License
 

@@ -3,23 +3,19 @@ owner: jmartinkova
 repo: upptime
 
 sites:
-  - name: "DSW Cloud for ELIXIR (homepage)"
-    url: https://dsw.elixir-europe.org
-
-  - name: "DSW Researchers instance"
-    url: https://researchers.dsw.elixir-europe.org
+  - name: DMP.eosc.cz
+    url: https://dmp.eosc.cz
+    icon: https://dmp.eosc.cz/static/icons/favicon.svg
+  - name: DMP.eosc.cz/wizard
+    url: https://dmp.eosc.cz/wizard/
+    icon: https://dmp.eosc.cz/wizard/img/favicon/favicon.ico
 
 status-website:
   baseUrl: /upptime
-
   logoUrl: https://jmartinkova.github.io/upptime/dsw-icon.svg
-
-  name: "DSW Cloud for ELIXIR | Status"
-
-  introTitle: "Status page for [**dsw.elixir-europe.org**](https://dsw.elixir-europe.org) services."
-
-  introMessage: "This status page monitors the availability of the DSW Cloud for ELIXIR services."
-
+  name: "DMP in Czech NRP | Status"
+  introTitle: "Status page for [**dmp.eosc.cz**](https://dmp.eosc.cz) services."
+  introMessage: "This is status page monitors the availability of the DMP in National Repository Platform for Research Data (in Czech Republic) and related services. It also contains important information in case of outages, scheduled maintenance, and other incidents."
   themeUrl: https://jmartinkova.github.io/upptime/custom-theme.css
 
   navbar:
@@ -27,13 +23,13 @@ status-website:
       href: /upptime
 
     - title: Homepage
-      href: https://dsw.elixir-europe.org
+      href: https://dmp.eosc.cz
 
   js: |
     function hidePastIncidents() {
       const path = window.location.pathname.replace(/\/$/, "");
 
-      if (path !== "/status") {
+      if (path !== "/upptime") {
         return;
       }
 
