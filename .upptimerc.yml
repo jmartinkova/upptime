@@ -25,28 +25,6 @@ status-website:
     - title: Homepage
       href: https://dmp.eosc.cz
 
-  js: |
-    function hidePastIncidents() {
-      const path = window.location.pathname.replace(/\/$/, "");
-
-      if (path !== "/upptime") {
-        return;
-      }
-
-      document.querySelectorAll("section").forEach(function (section) {
-        const heading = section.querySelector("h2");
-
-        if (heading && heading.textContent.trim() === "Past Incidents") {
-          section.style.display = "none";
-        }
-      });
-    }
-
-    window.addEventListener("load", hidePastIncidents);
-
-    setTimeout(hidePastIncidents, 500);
-    setTimeout(hidePastIncidents, 1500);
-
 workflowSchedule:
   graphs: "0 0 * * *"
   responseTime: "0 23 * * *"
