@@ -29,6 +29,20 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+  js: |
+    window.addEventListener("load", function () {
+      if (window.location.pathname === "/status/" ||
+          window.location.pathname === "/status") {
+
+        document.querySelectorAll("section").forEach(function (section) {
+          const heading = section.querySelector("h2");
+
+          if (heading && heading.textContent.trim() === "Past Incidents") {
+            section.style.display = "none";
+          }
+        });
+      }
+    });
 
 workflowSchedule:
   graphs: "*/10 * * * *" #regenerate graphs - every 10 minutes
