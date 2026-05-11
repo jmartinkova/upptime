@@ -33,7 +33,7 @@ status-website:
     function hidePastIncidents() {
       const path = window.location.pathname.replace(/\/$/, "");
 
-      if (path !== "/upptime") {
+      if (path !== "/status") {
         return;
       }
 
